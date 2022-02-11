@@ -1,0 +1,8 @@
+#User function Template for python3
+
+class Solution:
+    #Function to rotate an array by d elements in counter-clockwise direction. 
+    def rotateArr(self,A,D,N):
+        #Your code here
+        #rotate elements by d digits
+        A[:]=A[D:]+A[:D]
