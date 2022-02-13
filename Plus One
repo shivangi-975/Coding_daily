@@ -1,0 +1,32 @@
+// { Driver Code Starts
+#include <bits/stdc++.h>
+using namespace std;
+
+
+ // } Driver Code Ends
+//User function Template for C++
+
+class Solution {
+  public:
+    vector<int> increment(vector<int> arr ,int N) {
+        // code here
+        int idx=arr.size()-1;
+        while(idx>=0)
+        {
+            if(arr[idx]==9)
+            {
+                arr[idx]=0;
+            }
+            else
+            {
+                arr[idx]+=1;
+                return arr;
+            }
+            idx--;
+        }
+       arr.insert(arr.begin(),1);
+       return arr;
+        
+    }
+};
+
